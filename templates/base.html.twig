@@ -13,6 +13,13 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block header %}
+            {% include "/parts/header.html.twig" %}
+        {% endblock %}
+        <main>
+            <div class="s-container">
+                {% block body %}{% endblock %}
+            </div>
+        </main>
     </body>
 </html>

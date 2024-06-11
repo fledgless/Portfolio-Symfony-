@@ -3,14 +3,6 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
-            <h1 class="text-center my-4">Test de Bootstrap</h1>
-            <a href="" class="btn btn-primary">test</a>
-        </div>
-        <div class="col-4"></div>
-    </div>
-</div>
+    {% block carousel %}{% include '/home/carousel.html.twig' %}{% endblock %}
+
 {% endblock %}

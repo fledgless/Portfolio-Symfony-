@@ -141,7 +141,7 @@ body {
 }
 
 main {
-    background-color: blueviolet;
+    background-color: #E4DFDA;
 }
 
 #container {
@@ -153,8 +153,21 @@ header {
     position: fixed;
     width: 100%;
     height: 10vh;
-    background-color: cadetblue;
+    background-color: #4281A4;
 }
+
+h1 {
+  color: #4281A4;
+}
+
+h2 {
+  color: #48A9A6;
+}
+
+.s-container {
+  display: block;
+}
+
 
 header nav {
     display: flex;
@@ -173,6 +186,7 @@ header nav .nav-list li .nav-links {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
 }
 
 #hamburger {
@@ -186,5 +200,6 @@ header nav .nav-list li .nav-links {
     header nav #hamburger {
         display: block;
         cursor: pointer;
+        color: white;
     }
 }

@@ -7,4 +7,8 @@ import './bootstrap';
  */
 import './styles/app.css';
 
-
+let nav = document.querySelector("nav");
+let hamburger = document.querySelector("#hamburger");
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+})

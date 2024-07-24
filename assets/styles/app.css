@@ -140,6 +140,10 @@ body {
     min-height: calc(var(--vh, 1vh) * 100);
 }
 
+header > nav, main {
+  padding: 5px;
+}
+
 main {
     background-color: #E4DFDA;
 }
@@ -158,6 +162,10 @@ header {
 
 h1 {
   color: #4281A4;
+  font-size: 56px;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
 
 h2 {
@@ -166,8 +174,12 @@ h2 {
 
 .s-container {
   display: block;
+  height: fit-content;
+  padding-top: 10vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: black;
 }
-
 
 header nav {
     display: flex;
@@ -187,6 +199,7 @@ header nav .nav-list li .nav-links {
     color: white;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
+    font-size: 20px;
 }
 
 #hamburger {
@@ -202,4 +215,11 @@ header nav .nav-list li .nav-links {
         cursor: pointer;
         color: white;
     }
+}
+
+.about-me {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

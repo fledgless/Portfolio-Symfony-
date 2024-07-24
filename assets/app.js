@@ -1,4 +1,4 @@
-import './bootstrap.js';
+import './bootstrap';
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -7,4 +7,15 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+let nav = document.querySelector("nav");
+let hamburger = document.querySelector("#hamburger");
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+})
+
+let links = document.querySelectorAll(".nav-links");
+links.forEach((liens) => {
+    liens.addEventListener("click", () => {
+        nav.classList.remove("open");
+    })
+})

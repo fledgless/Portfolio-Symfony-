@@ -215,6 +215,20 @@ header nav .nav-list li .nav-links {
         cursor: pointer;
         color: white;
     }
+    header nav.open {
+      position: fixed;
+      width: 100%;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      background-color: #4281A4;
+    }
+    header nav.open .nav-list {
+      justify-content: space-around;
+      flex-direction: column;
+      display: flex;
+      text-align: center;
+    }
 }
 
 .about-me {

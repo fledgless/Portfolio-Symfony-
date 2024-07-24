@@ -13,3 +13,9 @@ hamburger.addEventListener("click", () => {
     nav.classList.toggle("open");
 })
 
+let links = document.querySelectorAll(".nav-links");
+links.forEach((liens) => {
+    liens.addEventListener("click", () => {
+        nav.classList.remove("open");
+    })
+})

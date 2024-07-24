@@ -165,11 +165,20 @@ h1 {
   font-size: 56px;
   text-align: center;
   margin-top: 5vh;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
+  font-family: "Bona Nova SC", serif;
 }
 
 h2 {
   color: #48A9A6;
+  font-size: 32px;
+  margin-bottom: 2vh;
+  font-family: "Bona Nova SC", serif;
+}
+
+p {
+  text-align: justify;
+  margin: 10px;;
 }
 
 .s-container {
@@ -179,6 +188,7 @@ h2 {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   color: black;
+  font-weight: 450;
 }
 
 header nav {
@@ -200,6 +210,11 @@ header nav .nav-list li .nav-links {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+}
+
+header nav .nav-list li .nav-links:hover {
+  color: black;
+  font-weight: bolder;
 }
 
 #hamburger {
@@ -232,8 +247,11 @@ header nav .nav-list li .nav-links {
 }
 
 .about-me {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about-me p {
+  text-align: center;
 }

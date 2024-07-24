@@ -12,3 +12,4 @@ let hamburger = document.querySelector("#hamburger");
 hamburger.addEventListener("click", () => {
     nav.classList.toggle("open");
 })
+

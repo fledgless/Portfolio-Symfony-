@@ -244,7 +244,7 @@ body.dark-mode header nav .nav-list li .nav-links:hover{
 }
 
 @media screen and (max-width: 768px) {
-    header nav .nav-list {
+    header nav .nav-list, header nav #dark-mode {
         display: none;
     }
     header nav #hamburger {
@@ -260,7 +260,7 @@ body.dark-mode header nav .nav-list li .nav-links:hover{
       left: 0;
       background-color: #4281A4;
     }
-    header nav.open .nav-list {
+    header nav.open .nav-list, header nav.open #dark-mode {
       justify-content: space-around;
       flex-direction: column;
       display: flex;

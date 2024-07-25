@@ -39,3 +39,8 @@ const runColorMode = (fn) => {
         document.body.classList.add('dark-mode');
     }
   })
+
+let darkModeButton = document.querySelector("#dark-mode");
+darkModeButton.addEventListener("click", () => {
+    document.body.classList.toggle('dark-mode');
+})

@@ -160,7 +160,7 @@ body.dark-mode main {
 header {
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     background-color: #4281A4;
 }
 
@@ -175,7 +175,7 @@ h1 {
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 2vh;
-  font-family: "Bona Nova SC", serif;
+  font-family: "Anta", sans-serif;
 }
 
 body.dark-mode h2 {
@@ -186,34 +186,47 @@ h2 {
   color: #48A9A6;
   font-size: 32px;
   margin-bottom: 2vh;
-  font-family: "Bona Nova SC", serif;
+  font-family: "Anta", sans-serif;
 }
 
 p {
   text-align: justify;
-  margin: 10px;;
+  margin: 10px;
+  font-size: 16px;
 }
 
 .s-container {
   display: block;
   height: fit-content;
-  padding-top: 10vh;
+  padding-top: 15vh;
   width: 100%;
   font-family: "Montserrat", sans-serif;
   color: black;
   font-weight: 450;
 }
 
-body.dark-mode .s-container, 
-body.dark-mode #hamburger {
+body.dark-mode .s-container {
   color: #CFCFCD;
 }
 
 header nav {
     display: flex;
-    justify-content: center;
     height: 100%;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav .nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+header #logo {
+  font-family: "Anta", sans-serif;
+  color: white;
+  font-size: 40px;
 }
 
 header nav .nav-list {
@@ -251,6 +264,7 @@ body.dark-mode header nav .nav-list li .nav-links:hover{
         display: block;
         cursor: pointer;
         color: white;
+        font-size: 32px;
     }
     header nav.open {
       position: fixed;

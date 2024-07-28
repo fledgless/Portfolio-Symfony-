@@ -277,3 +277,14 @@ body.dark-mode header nav .nav-list li .nav-links:hover{
 .about-me h2, .about-me p {
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: #4281A4;
+  font-weight: bold;
+}
+
+a:hover {
+  font-weight: bolder;
+  color: #48A9A6;
+}

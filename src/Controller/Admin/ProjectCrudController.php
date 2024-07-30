@@ -36,5 +36,6 @@ class ProjectCrudController extends AbstractCrudController
         yield UrlField::new('githubLink');
         yield AssociationField::new('image');
         yield AssociationField::new('tags');
+        
     }
 }

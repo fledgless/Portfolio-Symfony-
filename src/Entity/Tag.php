@@ -49,12 +49,12 @@ class Tag
         return $this;
     }
 
-    public function getColour(): ?string
+    public function getCategory(): ?string
     {
         return $this->category;
     }
 
-    public function setColour(string $category): static
+    public function setCategory(string $category): static
     {
         $this->category = $category;
 

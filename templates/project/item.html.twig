@@ -1,0 +1,16 @@
+<div class="project">
+    <h3>{{ project.title }}</h3>
+    {% if project.image %}
+        <img src="/uploads/{{ project.image }}" alt="{{ project.image }}">
+    {% endif %}
+    {% if project.personalProject == 0 %}
+        <p>{{ project.client }}</p>
+    {% else %}
+        <p>Projet personnel</p>
+    {% endif %}
+    
+    <p>{{ project.status }}</p>
+    <p>{{ project.summary }}</p>
+    <p>{{ project.link }}</p>
+    <a href="{{ project.githubLink }}">Lien vers le projet GitHub!</a>
+</div>

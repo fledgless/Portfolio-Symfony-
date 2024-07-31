@@ -19,7 +19,7 @@ class Tag
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $colour = null;
+    private ?string $category = null;
 
     /**
      * @var Collection<int, Project>
@@ -49,14 +49,14 @@ class Tag
         return $this;
     }
 
-    public function getColour(): ?string
+    public function getCategory(): ?string
     {
-        return $this->colour;
+        return $this->category;
     }
 
-    public function setColour(string $colour): static
+    public function setCategory(string $category): static
     {
-        $this->colour = $colour;
+        $this->category = $category;
 
         return $this;
     }

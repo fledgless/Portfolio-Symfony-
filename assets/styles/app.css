@@ -148,6 +148,10 @@ main {
     background-color: #E4DFDA;
 }
 
+body.dark-mode main {
+  background-color: #001242;
+}
+
 #container {
     display: grid;
     min-height: 100vh;
@@ -156,8 +160,14 @@ main {
 header {
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 17vh;
     background-color: #4281A4;
+    border-bottom: white;
+}
+
+body.dark-mode header, 
+body.dark-mode nav.open {
+  background-color: #000022;
 }
 
 h1 {
@@ -166,37 +176,109 @@ h1 {
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 2vh;
-  font-family: "Bona Nova SC", serif;
+  font-family: "Anta", sans-serif;
+}
+
+body.dark-mode h2 {
+  color: #4281A4;
 }
 
 h2 {
   color: #48A9A6;
   font-size: 32px;
   margin-bottom: 2vh;
-  font-family: "Bona Nova SC", serif;
+  font-family: "Anta", sans-serif;
 }
 
 p {
   text-align: justify;
-  margin: 10px;;
+  margin: 10px;
+  font-size: 16px;
 }
 
 .s-container {
   display: block;
   height: fit-content;
-  padding-top: 10vh;
+  padding-top: 15vh;
   width: 100%;
   font-family: "Montserrat", sans-serif;
   color: black;
   font-weight: 450;
 }
 
+body.dark-mode .s-container {
+  color: #CFCFCD;
+}
+
 header nav {
     display: flex;
-    justify-content: center;
     height: 100%;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+
+
+
+header nav .nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+header nav .nav-buttons #logo {
+  font-family: "Anta", sans-serif;
+  color: white;
+  font-size: 40px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+header nav .nav-buttons #hamburger {
+  display: none;
+}
+
+header nav .nav-buttons #dark-mode {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 32px;
+  background-color: #48A9A6;
+  color: #000022;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .nav-buttons #dark-mode i:last-child {
+  display: block;
+}
+
+header nav .nav-buttons #dark-mode i:first-child {
+  display: none;
+}
+
+body.dark-mode header nav .nav-buttons #dark-mode {
+  background-color: black;
+  color: #CFCFCD;
+}
+
+body.dark-mode header nav .nav-buttons #dark-mode i:last-child {
+  display: none;
+}
+
+body.dark-mode header nav .nav-buttons #dark-mode i:first-child {
+  display: block;
+}
+
+
+
+
 
 header nav .nav-list {
     flex-grow: 1;
@@ -217,18 +299,23 @@ header nav .nav-list li .nav-links:hover {
   font-weight: bolder;
 }
 
-#hamburger {
-    display: none;
+body.dark-mode header nav .nav-list li .nav-links:hover{
+  color: #4281A4;
 }
 
 @media screen and (max-width: 768px) {
-    header nav .nav-list {
+    header nav .nav-list, header nav .nav-buttons #dark-mode, hr {
         display: none;
     }
-    header nav #hamburger {
-        display: block;
-        cursor: pointer;
-        color: white;
+    header nav .nav-buttons #hamburger {
+      display: block;
+      cursor: pointer;
+      color: white;
+      font-size: 32px;
+      height: 40px;
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
     }
     header nav.open {
       position: fixed;
@@ -238,11 +325,14 @@ header nav .nav-list li .nav-links:hover {
       left: 0;
       background-color: #4281A4;
     }
-    header nav.open .nav-list {
+    header nav.open .nav-list, header nav.open .nav-buttons #dark-mode {
       justify-content: space-around;
       flex-direction: column;
       display: flex;
       text-align: center;
+    }
+    header nav.open .nav-buttons #logo {
+      display: none;
     }
 }
 
@@ -252,6 +342,17 @@ header nav .nav-list li .nav-links:hover {
   justify-content: center;
 }
 
-.about-me p {
+.about-me h2, .about-me p {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #4281A4;
+  font-weight: bold;
+}
+
+a:hover {
+  font-weight: bolder;
+  color: #48A9A6;
 }

@@ -356,3 +356,34 @@ a:hover {
   font-weight: bolder;
   color: #48A9A6;
 }
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.login-form form label {
+  margin: 5px;
+}
+
+.login-form form input {
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.login-form form button {
+  width: 75px;
+  align-self: center;
+  margin: 20px;
+  font-family: "Anta", sans-serif;
+}
+
+.login-form form button:hover {
+  background-color: #000022;
+  color: #E4DFDA;
+}
+

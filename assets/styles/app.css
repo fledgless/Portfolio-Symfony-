@@ -366,13 +366,21 @@ a:hover {
   text-align: center;
 }
 
+.login-form form div {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
 .login-form form label {
   margin: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .login-form form input {
   margin-bottom: 10px;
   width: 50%;
+  text-align: center;
 }
 
 .login-form form button {

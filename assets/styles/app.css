@@ -247,12 +247,18 @@ header nav .nav-buttons #dark-mode {
   width: 40px;
   padding: 0;
   border-radius: 50%;
-  font-size: 32px;
-  background-color: #48A9A6;
+  border: #000000 2px solid;
+  font-size: 24px;
+  background-color: #4281A4;
   color: #000022;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header nav .nav-buttons #dark-mode:hover {
+  background-color: black;
+  color: #CFCFCD;
 }
 
 header nav .nav-buttons #dark-mode i:last-child {
@@ -266,6 +272,12 @@ header nav .nav-buttons #dark-mode i:first-child {
 body.dark-mode header nav .nav-buttons #dark-mode {
   background-color: black;
   color: #CFCFCD;
+  border: #CFCFCD 2px solid;
+}
+
+body.dark-mode header nav .nav-buttons #dark-mode:hover {
+  background-color: #CFCFCD;
+  color: black;
 }
 
 body.dark-mode header nav .nav-buttons #dark-mode i:last-child {
@@ -336,6 +348,14 @@ body.dark-mode header nav .nav-list li .nav-links:hover{
     }
 }
 
+
+
+
+
+
+
+/* home */
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -356,6 +376,63 @@ a:hover {
   font-weight: bolder;
   color: #48A9A6;
 }
+
+
+
+/* projects */
+
+#project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#project-list .project {
+  margin: 15px;
+  max-width: 33%;
+  border: #4281A4 2px solid;
+  border-radius: 20px;
+}
+
+body.dark-mode #project-list .project {
+  border: #CFCFCD 2px solid;
+}
+
+#project-list .project .content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#project-list .project .content h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  align-self: center;
+  font-family: "Anta", sans-serif;
+  font-size: 24px;
+}
+
+#project-list .project .content img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+  #project-list {
+    flex-direction: column;
+  }
+
+  #project-list .project {
+    max-width: 90%;
+  }
+}
+
+
+
+
+/* login */
 
 .login-form form {
   display: flex;
@@ -379,8 +456,9 @@ a:hover {
 
 .login-form form input {
   margin-bottom: 10px;
-  width: 50%;
+  width: 25%;
   text-align: center;
+  align-self: center;
 }
 
 .login-form form button {
@@ -395,3 +473,8 @@ a:hover {
   color: #E4DFDA;
 }
 
+@media screen and (max-width: 768px) {
+  .login-form form input {
+    width: 50%;
+  }  
+}
